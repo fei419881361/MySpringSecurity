@@ -1,0 +1,12 @@
+server:
+  port: 8888
+  tomcat:
+    uri-encoding: UTF-8
+  servlet:
+
+    context-path: /server
+spring:
+  security:
+    user:
+      password: 123456
+

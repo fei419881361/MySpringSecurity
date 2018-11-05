@@ -1,0 +1,30 @@
+server:
+  port: 8889
+  tomcat:
+    uri-encoding: UTF-8
+  servlet:
+    context-path: /client1
+
+#spring:
+#  security:
+#    oauth2:
+#      client:
+#        client-id: c1
+#        client-secret: 123456
+#        user-authorization-uri: http://127.0.0.1:8888/server/oauth/authorize
+#        access-token-uri: http://127.0.0.1:8888/server/oauth/token
+#      resource:
+#        jwt:
+#          key-uri: http://127.0.0.1:8888/server/oauth/token_key #配置的访问密钥身份认证
+spring:
+  security:
+    oauth2:
+      client:
+        clientId: c1
+        clientSecret: 123456
+        user-authorization-uri: http://127.0.0.1:8888/server/oauth/authorize
+        access-token-uri: http://127.0.0.1:8888/server/oauth/token
+
+      resource:
+        jwt:
+          key-uri: http://127.0.0.1:8888/server/oauth/token_key #配置的访问密钥身份认证
